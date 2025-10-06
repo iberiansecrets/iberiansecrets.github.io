@@ -1,37 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('/w3images/forestbridge.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
-</head>
-<body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </div>
-</div>
+    <!-- Required metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title del juego</title>
+    <meta name="description" content="Descripción del juego">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/local_css.css">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+</head>
+<body id="fullBody">    
+
+    <!-- HEADER-->
+    <div id="localHeader" class="row">
+
+        <!-- MENU -->
+         <div class="col-3  d-md-none">
+            <img src="img/burguer_menu.png" id="burguer" class="img-fluid float_start" onclick="showMenu()"></img>
+        </div>
+        
+        <div id="MenuCampaignD" class="col-md-3 d-none d-md-block">
+            <button type="button" class="btn btn-link menuLink" onclick="showGame()">El juego</button>
+            <button type="button" class="btn btn-link menuLink" onclick="showTeam()">Quiénes somos</button>
+            <button type="button" class="btn btn-link menuLink" onclick="showContact()">Contacto</button>
+        </div>
+        <div id="MenuCampaignM" class="menuMobile d-none">
+            <button type="button" class="btn menuLinkM" onclick="showGame()">El juego</button>
+            <button type="button" class="btn menuLinkM" onclick="showTeam()">Quiénes somos</button>
+            <button type="button" class="btn menuLinkM" onclick="showContact()">Contacto</button>
+        </div>                           
+        <div class="col-md-6">
+            <h1 class="header">PROJECT Z</h1>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 0;">
+
+        <!-- HERO -->
+        <div class="row bodySup">
+            <div id="hero">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="Description">La humanidad ha caído</h2>
+                        <p class="Description">No fueron bombas nucleares, ni corporaciones sin escrúpulos, ni invasores de otro mundo. Fue algo peor. Un virus alterado en laboratorio se propagó sin control, transformando al 80% de la población en criaturas hambrientas de carne humana. Zombies. 
+                            En tu desesperada huida, has quedado atrapada en las ruinas de un viejo edificio. Las salidas están bloqueadas. El aire huele a muerte. Solo hay una forma de sobrevivir: resistir. Las oleadas vienen sin descanso. Cada rincón es una amenaza. Las balas escasean, pero rendirse no es una opción. ¿Tienes lo que se necesita para salir con vida?</p>
+                    </div>
+                </div>
+                <div class="row equipo">
+                    <div class="col-12">
+                        <img src="img/cartel-zombie.png" class="img-fluid heroImgD" alt="Zombie Battle - Juego para móviles">
+                    </div>
+                </div>
+                <div class="row d-none">
+                    <div class="col-4 col-md-2">
+                        <img src="img/secreto-iberico.png" class="img-fluid  d-inline" alt="Plato de secreto ibérico">
+                    </div>
+                    <div class="col-8 col-md-10">
+                        <p style="padding-left: 10px;"><strong>Grupo 6 - Iberia Secrets</strong></p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <!-- MAIN -->
+        <div id="bodyInf" class="container bodyInf">
+                <div class="row"> <!-- MAIN VIDEO -->
+                    <h3>Descubre quién eres de verdad</h3>
+                    <div id="videoD" class="col-md-12 col-lg-12 video-responsive">
+                        <!--<iframe src="https://www.youtube.com/embed/jk3XSZAxOfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                        <video src="video/secuencia_01.mp4" controls="true" width="100%" height="auto"></video>
+                    </div>
+                </div>
+                <div id="fullStoryD" class="row"> <!-- FULL STORY DESKTOP -->
+                    <div class="col-md-12 col-lg-12">
+                                <h3 class="contentSubTitle">¡Toma el control!</h3>
+                                <p>Te has refugiado en un viejo edificio y huyendo has llegado a un enorm patio interior, como un antiguo coliseo romano. Ni siquiera sabías que eso estaba en tuciudad, pero no hay tiempo para una visita guiada.</p>
+                                <p>Los zombies entran en oleadas dispuestos a arrancarte la carne y tú solo tienes una escopeta y aquello que puedas utilizar del entorno. Así que te preparas, cargas tu arma y piensas: "Venid aquí. Os estoy esperando"</p>
+                                <h3 class="contentSubTitle">No pierdas nada de vista</h3>
+                                <p>Los zombies no vienen solos. Durante tu lucha, algunos zombies dejarán caer algunos items que pueden ser de mucha utilidad. Algunos mejorarán tu velocidad, hay balas que darán más potencia de disparo a tu arma e incluso hay un señuelo que hará que la horda de muertos vivientes lo sigan, dándote un tiempo precioso para replantear tu estrategia, o simplemente, eliminarlos por la espalda. ¡Tú eliges!</p>
+                            
+                    </div>
+                </div>
+                        
+                <div class="row"> <!-- CHARACTERS INTRO -->
+                        <div class="row">
+                            <div class="col-6">
+                                <h3 class="contentSubTitle">Tu mayor enemigo... no eres tú</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>La humanidad casi ha colapsado por completo. El virus ha infectado a miles de millones de personas diferentes. Sin embargo, sus efectos son parecidos, creando seis tipos de muertos vivientes con diferentes características y formas de aniquilar a los vivos.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <img src="img/zombi_test.jpg" alt="zombi test corriendo" class="img_zombie">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem iusto provident at accusamus, debitis harum obcaecati quam distinctio nulla tempora facere vitae? Qui quae cupiditate totam deserunt sit ipsam non.</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <img src="img/zombi_test.jpg" alt="zombi test corriendo" class="img_zombie">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consectetur sed corrupti ad blanditiis illum eum veniam iste suscipit enim sequi nesciunt, provident error mollitia rem harum ex assumenda adipisci?</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <img src="img/zombi_test.jpg" alt="zombi test corriendo" class="img_zombie">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eum ab consequuntur expedita iste rerum, perferendis commodi odit officia blanditiis mollitia modi eaque similique, ut possimus non cupiditate consequatur quas.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <img src="img/zombi_test.jpg" alt="zombi test corriendo" class="img_zombie">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolore nisi ducimus, error assumenda incidunt perferendis ipsa itaque a minus voluptate corrupti saepe placeat numquam explicabo vero. Voluptas, quasi optio!</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <img src="img/zombi_test.jpg" alt="zombi test corriendo" class="img_zombie">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem totam qui tempore deserunt accusamus eveniet expedita ea eos fugit officiis suscipit dolor laudantium laborum nulla voluptatum alias corporis, asperiores ullam.º</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <img src="img/zombi_test.jpg" alt="zombi test corriendo" class="img_zombie">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto facilis commodi, placeat aliquam nemo amet perferendis voluptate distinctio minima quis quos harum magni, sit illo quas animi dolorem ut voluptatum!</p>
+                            </div>
+                        </div>
+
+                </div>   
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer class=" row footer">
+            <div class="col-12">
+                <a href=""><img src="img/logo_facebook.png" alt="logo Facebook" class="logo_RRSS" onclick="Facebook()"></a>
+            
+                <img src="img/logo_instagram.png" alt="logo Facebook" class="logo_RRSS" onclick="Instagram()">
+            
+                <img src="img/logo_X.png" alt="logo Facebook" class="logo_RRSS" onclick="XTwitter()">
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Local JS -->
+    <script src="js/local_js.js"></script>
 
 </body>
 </html>

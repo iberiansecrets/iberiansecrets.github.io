@@ -1,0 +1,181 @@
+/* GENERAL */
+@font-face{
+    font-family: Origin Tech Demo;
+    src: url('../font/web.ttf');
+}
+
+body{
+    background-color: #FBFBFA;
+    
+}
+
+/* HEADER */
+
+.logo{
+    padding-top: 15px;
+}
+
+#localHeader{
+    background-image: url("../img/cartel-zombie.png");
+    background-position-y: -290px;
+    overflow: hidden;
+    margin-top: -10px;
+    height: 85px;
+}
+
+.header{
+    padding-top: 32px;
+    font-family: Origin Tech Demo;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-weight: 400;
+}
+
+/* MENU */
+
+.menuLink{
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+    color: white!important;
+    border-radius: 0%!important;
+}
+
+
+.menuActive{
+    background-color: rgba(255, 255, 255, 0.397)!important;
+}
+
+
+.menuActive:hover,.menuLink:hover{
+    background-color: rgba(255, 255, 255, 0.397)!important;
+}
+
+#burguer{
+    height: 40px;
+    width: auto;
+    margin: 27px 10px;
+}
+
+.menuMobile{
+    position: fixed;
+    top: 75px;
+    left: 0px;
+    width: 175px!important;
+    background-color: white;
+}
+
+.menuLinkM{
+    text-align: left !important;
+    height: 60px;
+    cursor: pointer;
+    padding-left: 15px !important;
+    color: black !important;
+    border-radius: 0% !important;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.116)!important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116)!important;
+}
+
+.menuLinkM:hover{
+    background-color: rgba(17, 17, 17, 0.116)!important;
+}
+
+/* TITLE */
+
+.mainTitle{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.mainTitleDesktop{
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.Description{
+    text-align: center;
+    margin: 10px 0% 15px 0%;
+
+}
+
+
+/* HERO */
+
+.heroImgD{
+    height: 600px!important;
+    display: block;
+    margin: 20px auto;
+}
+
+.heroImgM{
+    width: 100%;
+    height: auto;
+}
+
+#hero{
+    margin: 40px 0px;
+}
+
+.equipo{
+    margin: 20px 0px;
+}
+
+
+
+/* CONTENT */
+
+.bodyInf{
+    border-top: 1px solid rgba(0, 0, 0, 0.116);
+    padding-top: 20px;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    }
+    
+.video-responsive iframe,.video-responsive object,.video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+
+.contentSubTitle{
+    margin: 20px 0px 5px;
+    font-size: 1.3rem;
+}
+
+.img_zombie{
+    width: 100%;
+}
+
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    height: 60px;
+    margin-top: 60px !important;
+    background-color: black;
+}
+
+.logo_RRSS{
+
+    width: 35px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.logo_RRSS:hover{
+    opacity: 0.5;
+}
