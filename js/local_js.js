@@ -48,7 +48,7 @@ function TikTok(){
 }
 
 function sendEmail() {
-    const destinatario = "iberiansecrets@gmail.com";
+    const destinatario = "iberiansecrets2025@gmail.com";
     const asunto = "Consulta";
     
     const mailtoLink = 'mailto:${destinatario}?subject=${encodeURIComponent(asunto)}';
