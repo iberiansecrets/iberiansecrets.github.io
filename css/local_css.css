@@ -225,6 +225,49 @@ body{
     width: 100%;
 }
 
+/* CONTACTO */
+
+#logoContact{
+    max-height: 200px;
+    width: auto;
+    display: block;
+    margin: 50px auto;
+}
+
+.rowEmail{
+    padding: 50px 0px;
+}
+
+.bannerEmail{
+    background-color: black;
+    padding: 20px;
+}
+
+.bannerEmail h3{
+    color: white;
+    font-weight: 700;
+}
+
+.bannerEmail p{
+    color: white;
+}
+
+.logo_RRSS_contacto{
+
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 50px auto 20px;
+}
+
+.logo_RRSS_contacto:hover{
+    opacity: 0.8;
+}
+
+.titleRRSS{
+    text-align: center;
+}
+
 /* FOOTER */
 
 .footer{
