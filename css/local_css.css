@@ -258,6 +258,7 @@ body{
     height: auto;
     display: block;
     margin: 50px auto 20px;
+    cursor: pointer;
 }
 
 .logo_RRSS_contacto:hover{
@@ -275,6 +276,10 @@ body{
     margin-top: 60px !important;
     background-color: black;
     padding-right: 10px;
+}
+
+#logos_footer img {
+    cursor: pointer;
 }
 
 .logo_RRSS{
