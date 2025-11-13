@@ -1,4 +1,14 @@
-//Fixing content menu during scrolling
+// Evita que el navegador recuerde la posición de scroll al recargar
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+// Resetea el scroll al principio al recargar
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+
+//Fija el menú de contenido durante el scrolling
 
 function showMenu(){
     document.getElementById("MenuCampaignM").classList.toggle("d-none");
