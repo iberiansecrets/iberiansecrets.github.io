@@ -31,11 +31,35 @@ body{
 .headerIS{
     padding-top: 32px;
     font-family: Stencil;
-    font-size: 2rem;
+    font-size: 1.15rem;
     color: white;
     text-align: center;
     line-height: normal;
     font-weight: 400;
+}
+
+@media (max-width: 1190px) {
+    .headerIS{
+        display: none;
+    }
+}
+
+@media (min-width: 1330px) {
+    .headerIS{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1630px) {
+    .headerIS{
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1735px) {
+    .headerIS{
+        font-size: 1.7rem;
+    }
 }
 
 /* MENU */
@@ -65,12 +89,13 @@ body{
 }
 
 #logoLinNeg{
-    max-height: 85px;
+    max-height: 80px;
     margin: 5px 10px;
 }
 
 #logoLinNegM{
-    margin: 25px 10px;
+    max-height: 80px;
+    margin: 10px 10px;
 }
 
 .menuMobile{
