@@ -226,9 +226,8 @@ body{
 
 .video-responsive {
     position: relative;
-    padding-bottom: 56.25%; /* 16/9 ratio */
     padding-top: 30px; /* IE6 workaround*/
-    height: 0;
+    max-height: 775px;
     overflow: hidden;
     }
     
@@ -240,6 +239,12 @@ body{
     height: 100%;
     }
 
+.videoCaption{
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
 
 .contentSubTitle{
     margin: 20px 0px 5px;
